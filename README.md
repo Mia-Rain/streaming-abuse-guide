@@ -36,11 +36,14 @@ Below is info on abusing various platforms for the best experiences, junk for ne
 ### Abusing Spotify
 For every platform that Spotify is present on, hacks and tools exist to bypass ads and spoof a premium account.
 #### Desktop
-On the desktop, there are tools just for bypassing ads. Still, those often don't work too well. [Spicetify](https://spicetify.app) can install extensions that bypass ads and provide premium features.
+On the desktop, there are tools just for bypassing ads; such as [SpotX](https://github.com/SpotX-Official/SpotX), [BlockTheSpot](https://github.com/mrpond/BlockTheSpot), and [BurntSushi](https://github.com/OpenByteDev/burnt-sushi), SpotX has worked the best for these.  
+[Spicetify](https://spicetify.app) can install extensions that bypass ads and get you premium features with advanced customiztions.  
+Extensions for adblocking have been known to have issues on spicetify.
 #### iOS
 It's much easier to sideload using a jailbroken iPhone or one with [TrollStore](https://github.com/opa334/TrollStore). Methods for sideloading without these do exist, such as [sideloadly](https://sideloadly.io/) and [altstore](https://altstore.io/)/[sidestore](https://sidestore.io/). With that, it's possible to sideload the modified apps from [SpotCompiled](https://github.com/SpotCompiled).
 #### Android
 This really needs no guide. Endless "Spotify APK mod" downloads are all across the web.
+However the current method is [revanced](https://revanced.app)
 
 ---
 
@@ -48,8 +51,11 @@ This really needs no guide. Endless "Spotify APK mod" downloads are all across t
 
 Below is various info on streaming APIs I've learned over time and some theories for sidestepping issues.
 
-#### Spotify
+#### Spotify - Playback
 Using the Web Playback SDK, Spotify Connect clients require a premium account. However, it should be possible to sidestep this by pretending to be a smart speaker and making spoofed requests with a bit of trickery to block ads.
+#### Spotify - API use
+The spotify content and controller api is completely free for free users for now and the foreseeable future.
+Thus as long as a user is not trying to play back content anything that says it only supports premium accounts can be ignored.
 #### Qobuz
 Qobuz's API is no longer open source. However, it is still easy to abuse. Notably, API usage only requires a valid APP_ID and TOKEN. These never change. Allowing sources such as [firehawk32](https://rentry.org/firehawk52#tokens) to exist.
 #### Deezer
